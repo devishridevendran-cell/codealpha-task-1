@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Welcome to RedStore</h1>
+            <p>Best products at affordable prices.</p>
+            <button>Shop Now</button>
+        </div>
+    </section>
+
+
+    <!-- Products -->
+    <section class="products" id="products">
+        <h2>Featured Products</h2>
+
+        <div class="product-container">
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1000" alt="Shoes">
+                <h3>Running Shoes</h3>
+                <p>₹2999</p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1000" alt="T-Shirt">
+                <h3>Red T-Shirt</h3>
+                <p>₹999</p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1000" alt="Watch">
+                <h3>Smart Watch</h3>
+                <p>₹4999</p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1000" alt="Headphones">
+                <h3>Headphones</h3>
+                <p>₹1999</p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- About -->
+    <section class="about" id="about">
+        <h2>About RedStore</h2>
+        <p>
+            RedStore is a beginner-friendly e-commerce website project built using HTML, CSS, and JavaScript.
+        </p>
+    </section>
+
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@redstore.com</p>
+        <p>Phone: +91 9876543210</p>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 RedStore. All Rights Reserved.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<head>
+    <title>RedStore</title>
+
+    <script>
+        if(localStorage.getItem("loggedIn") != "true"){
+            window.location.href = "login.html";
+        }
+    </script>
+
+</head>
+
+<nav>
+   
+   <button onclick="logout()">Logout</button>
+</nav>
